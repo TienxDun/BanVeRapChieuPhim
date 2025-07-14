@@ -91,10 +91,17 @@ namespace CinemaManagement.Controllers
                 TongSoPhong = await _context.PhongChieus.CountAsync(),
                 TongSoGhe = await _context.GheNgois.CountAsync(),
 
+                // Thống kê vé tổng quan
+                TongVeDaTao = await _context.Ves.CountAsync(),
+                TongVeDaBanTheoHoaDon = await _context.CTHDs.CountAsync(),
 
-                // Top phim theo bộ lọc
-                TopPhimBanChay = await veQuery
-                    .GroupBy(v => new { v.MaPhim, v.TenPhim })
+                // Top phim bán chạy (từ hóa đơn)
+                TopPhimBanChay = await _context.CTHDs
+                    .Include(c => c.Ve)
+                    .ThenInclude(v => v.Phim)
+                    .Include(c => c.HoaDon)
+                    .Where(c => c.Ve.Phim != null)
+                    .GroupBy(c => new { c.Ve.MaPhim, c.Ve.TenPhim })
                     .Select(g => new TopPhimViewModel
                     {
                         MaPhim = g.Key.MaPhim,
@@ -115,8 +122,10 @@ namespace CinemaManagement.Controllers
                     .Take(5)
                     .ToListAsync(),
 
-                // Dữ liệu biểu đồ (chưa áp dụng lọc vì phụ thuộc yêu cầu)
-                DoanhThuTheoNgay = await GetDoanhThuTheoNgay(7),
+                // Doanh thu theo ngày (7 ngày gần nhất từ hóa đơn)
+                DoanhThuTheoNgay = await GetDoanhThuHoaDonTheoNgay(7),
+
+                // Thống kê theo tháng (12 tháng gần nhất)
                 DoanhThuTheoThang = await GetDoanhThuTheoThang(12)
             };
 
