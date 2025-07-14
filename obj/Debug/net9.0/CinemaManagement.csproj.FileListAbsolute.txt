@@ -367,7 +367,6 @@ C:\Users\ADMIN\Desktop\CMNP\Management\CNPM_TH_BA\obj\Debug\net9.0\CinemaManagem
 C:\Users\ADMIN\Desktop\CMNP\Management\CNPM_TH_BA\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\ADMIN\Desktop\CMNP\Management\CNPM_TH_BA\obj\Debug\net9.0\scopedcss\bundle\CinemaManagement.styles.css
 C:\Users\ADMIN\Desktop\CMNP\Management\CNPM_TH_BA\obj\Debug\net9.0\scopedcss\projectbundle\CinemaManagement.bundle.scp.css
-C:\Users\ADMIN\Desktop\CMNP\Management\CNPM_TH_BA\obj\Debug\net9.0\compressed\zmx72prbry-3eku3bvc3t.gz
 C:\Users\ADMIN\Desktop\CMNP\Management\CNPM_TH_BA\obj\Debug\net9.0\compressed\e8bfoio3nh-61n19gt1b8.gz
 C:\Users\ADMIN\Desktop\CMNP\Management\CNPM_TH_BA\obj\Debug\net9.0\compressed\1xfy4c8qgq-5ipweew5fc.gz
 C:\Users\ADMIN\Desktop\CMNP\Management\CNPM_TH_BA\obj\Debug\net9.0\compressed\iyax5w6n1p-i6m5pvvusy.gz
@@ -662,3 +661,4 @@ C:\Users\thanh\Desktop\CNPM_TH_BA\obj\Debug\net9.0\ref\CinemaManagement.dll
 C:\Users\thanh\Desktop\CNPM_TH_BA\obj\Debug\net9.0\compressed\zmx72prbry-um0u2vlr7k.gz
 C:\Users\thanh\Desktop\CNPM_TH_BA\obj\Debug\net9.0\compressed\rfgf3xbcp9-6d8kq7nsem.gz
 C:\Users\thanh\Desktop\CNPM_TH_BA\obj\Debug\net9.0\compressed\kyjrdkwdhq-6d8kq7nsem.gz
+C:\Users\ADMIN\Desktop\CMNP\Management\CNPM_TH_BA\obj\Debug\net9.0\compressed\zmx72prbry-um0u2vlr7k.gz

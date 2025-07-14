@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using CinemaManagement.Data;
 using CinemaManagement.Models;
 using CinemaManagement.ViewModels;
+using Microsoft.EntityFrameworkCore;
 
 namespace CinemaManagement.Controllers
 {
